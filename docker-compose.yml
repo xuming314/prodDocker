@@ -1,0 +1,10 @@
+version: '2'
+
+services:
+  server:
+    build: .
+    image: do5173/prod-server:16.10.11
+    container_name: proder
+    ports:
+      - "8000:8000"
+    command: ls
